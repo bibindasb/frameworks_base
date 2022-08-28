@@ -511,17 +511,16 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces, Tune
     private final Lazy<LightRevealScrimViewModel> mLightRevealScrimViewModelLazy;
     private final TunerService mTunerService;
 
-<<<<<<< HEAD
     /** Controller for the Shade. */
     @VisibleForTesting
     NotificationPanelViewController mNotificationPanelViewController;
-=======
+
     protected GameSpaceManager mGameSpaceManager;
 
     // expanded notifications
     // the sliding/resizing panel within the notification window
     protected NotificationPanelViewController mNotificationPanelViewController;
->>>>>>> e51a43847c8f (SystemUI: Add support for GameSpace)
+
 
     // settings
     private QSPanelController mQSPanelController;
@@ -4285,8 +4284,11 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces, Tune
         }
     }
 
+
     // End Extra BaseStatusBarMethods.
 
+
+    @Override
     public GameSpaceManager getGameSpaceManager() {
         return mGameSpaceManager;
     }
